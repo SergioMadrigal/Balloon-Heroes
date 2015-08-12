@@ -5,7 +5,7 @@ using System.Collections;
 public class VideoIntro : MonoBehaviour {
 
 	void Start() {
-//		((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Play ();
+		((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Play ();
 
 	}
 	void Update(){

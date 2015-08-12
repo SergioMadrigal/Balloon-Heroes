@@ -3,13 +3,24 @@ using System.Collections;
 
 public class BotonesMenu : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public void ChangeToPlay(int sceneToChangeTo){
+		
+		Application.LoadLevel ("Video");
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public void ChangeToFB(int sceneToChangeToFB){
+		
+		Application.LoadLevel ("Game");
+		
+	}
+	public void ChangeToShop(int sceneToChangeToShop){
+		
+		Application.LoadLevel ("Game");
+		
+	}
+	public void ChangeToSkip(int sceneToChangeToSkip){
+		
+		Application.LoadLevel ("Seleccion");
+		
 	}
 }
