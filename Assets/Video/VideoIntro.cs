@@ -9,22 +9,16 @@ public class VideoIntro : MonoBehaviour {
 
 	}
 	void Update(){
-//		DesaparecerIntro ();
+		DesaparecerIntro ();
 	}
 	
-//	void DesaparecerIntro(){
+	void DesaparecerIntro(){
 
-//		if(Input.GetMouseButton(0)){
-//			((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Pause();
-//			gameObject.SetActive(false);
+		if(Input.GetMouseButton(0)){
+			((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Pause();
+			gameObject.SetActive(false);
 
-//		}
-//	}
+		}
+	}
 
-//	public void Menu(){
-
-//		GetComponent<Menu> ().OnGUI ();
-
-
-//	}
 }

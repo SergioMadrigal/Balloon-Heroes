@@ -2,27 +2,28 @@
 using System.Collections;
 
 public class Globos : MonoBehaviour {
-//	public GameObject esferas;
 
-	// Use this for initialization
-	void Start () {
+	public float timer = 15.0f;
+	float valor = 100;
+	//public GameObject marcador;
 
-	}
-	
-	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
+
+		timer -= Time.deltaTime;
+
+		if(timer<=0){
+			timer = 0;
+			print ("Tiempo terminado");
+		}
 	 
 		
 		}
-	}
 
-	void OnCollisionEnter(Collision other){
-	
-			
-		}
 	void OnMouseDown(){
 		Destroy (gameObject);
+
+		valor += + 100;
+		print(valor);
 
 	}
 	

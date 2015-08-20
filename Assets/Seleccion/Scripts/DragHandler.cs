@@ -23,6 +23,9 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	public void OnDrag (PointerEventData eventData)
 	{ 
 		transform.position = Input.mousePosition;
+		Debug.Log("En posicion");
+
+
 	}
 	
 	#endregion
@@ -35,15 +38,11 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 		if(transform.parent != startParent){
 			transform.position = startPosition;
+			Debug.Log("Arrastrado");
 		}
+
 	}
 
 	#endregion
-
-
-
-
-
-
 
 }
