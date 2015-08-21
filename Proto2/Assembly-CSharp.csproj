@@ -52,6 +52,7 @@
      <Compile Include="Assets\Prototipos\Vida[Personaje]\CharacterLife.cs" />
      <Compile Include="Assets\PrototiposConAssets\Background Scrolling\BG_Scroll.cs" />
      <Compile Include="Assets\PrototiposConAssets\BarradeVida_Tabla\BarLife.cs" />
+     <Compile Include="Assets\PrototiposConAssets\LoadCharacter\LoadNewCharacter.cs" />
      <Compile Include="Assets\PrototiposConAssets\Personaje_Disparo\BoneBullet.cs" />
      <None Include="Assets\Prototipos\CargaNiveles\levels.xml" />
      <None Include="Assets\Prototipos\CargaNiveles\prueba\gamexmldata.xml" />
