@@ -4,12 +4,12 @@ using System.Collections;
 
 public class Botones : MonoBehaviour {
 
-	public Canvas pause;
+	public GameObject pause;
 	public Canvas ScoreFinal;
 	public bool active;
 
 	void Start(){
-		pause.enabled = false;
+		pause.SetActive(false);
 		ScoreFinal.enabled = false;
 	}
 
@@ -20,11 +20,11 @@ public class Botones : MonoBehaviour {
 			if(active){
 				active = true;
 				print("Activado");
-				pause.enabled = true;
+				pause.SetActive(true);
 			}else{
 				active = false;
 				print("Desactivado");
-				pause.enabled = false;
+				pause.SetActive(false);
 			}
 
 		}

@@ -50,10 +50,12 @@
      <Compile Include="Assets\Bonus\ObjectPool.cs" />
      <Compile Include="Assets\Bonus\camara.cs" />
      <Compile Include="Assets\Enemigo\EnemyController.cs" />
+     <Compile Include="Assets\Enemigo\healtEnemy.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
      <Compile Include="Assets\Pause\Botones.cs" />
      <Compile Include="Assets\Pause\PopUp.cs" />
+     <Compile Include="Assets\Reciclador.cs" />
      <Compile Include="Assets\Seleccion\Scripts\DragHandler.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Inventory.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
