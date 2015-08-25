@@ -18,6 +18,10 @@ public class healtEnemy : MonoBehaviour {
 
 		health -= value;
 		healthBar.size = health/100f;
+		if(health == 0){
 
+			gameObject.
+
+		}
 	}
 }
