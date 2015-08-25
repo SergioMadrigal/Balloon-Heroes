@@ -3,41 +3,89 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class LoadNewCharacter : MonoBehaviour {
+	//var timer
+	public float timeLimit = 0f;
+	public Image timerImage;
+	//public Text textCounter;
+	
+	private float timeLapse = 0f;
+	private float timeFraction = 0f;
 
-	public Image timerImage ;
-	//public Button buttonDog, buttonBunny, buttonTurtle;
+	//var buttons
+	private bool butWithCharacter; //flag
+	public Button[] characButtons;
+	private int nRandom;
+
 
 	// Use this for initialization
 	void Start () {
-		timerImage = GetComponent<Image>() ;
+		//Timer
+		timerImage = timerImage.GetComponent<Image>() ;
+		//textCounter = textCounter.GetComponent<Text>();
 
-		StartCoroutine("activeButton");
+		timeFraction = timeLimit/80f;  //Divide time between 10
+		timeLapse = Time.time + timeFraction;
+
+		timeLimit = Time.time + timeLimit;
+
+		timerImage.fillAmount = 0f;
+
+		//buttons
+		butWithCharacter = false;
+
 		StartCoroutine("MethodUpdate");
 	}
 	
+
 	// Update is called once per frame
 	IEnumerator MethodUpdate () {
+
 		while(true){
 
+			if(!butWithCharacter)
+				enableButton();
 
+			timer ();
+
+			//Chronometer
+			//textCounter.text = Mathf.Round(Time.time).ToString() +"s";
 
 			yield return null;
 		}
 	}
-	
-	//Timer for activate character Button
-	IEnumerator activeButton(){
 
-		timerImage.fillAmount = 0;
-
-		while(timerImage.fillAmount < 1f){
-			Debug.Log (timerImage.fillAmount);
-			timerImage.fillAmount += 0.1f;
+	//Timer
+	private void timer(){
+		if(timerImage.fillAmount < 1){
+			if(Time.time > timeLapse){
+				timerImage.fillAmount += 0.0125f;
+				timeLapse = Time.time + timeFraction;
+			}
 		}
+	}
 
-		timerImage.fillAmount = 0;
+	//enable Button with random character
+	private void enableButton(){
+		if(timerImage.fillAmount == 1){
+			nRandom = Random.Range(0,3);
 
-		yield return null;
+			Debug.Log(nRandom);
+			switch(nRandom){
+				case 0:
+					characButtons[0].gameObject.SetActive(true) ;
+					break;
+				case 1:
+					characButtons[1].gameObject.SetActive(true) ;
+					break;
+				case 2:
+					characButtons[2].gameObject.SetActive(true) ;
+					break;
+				default:
+					break;
+			}
+
+			butWithCharacter = true;
+		}
 	}
 
 	//disable Button when is Pressed
