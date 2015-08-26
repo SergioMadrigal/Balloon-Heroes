@@ -9,9 +9,9 @@ public class camara : MonoBehaviour {
 
 
 
-		for (int i=0; i<300; i++) {
+		for (int i=0; i<100; i++) {
 			GameObject objeto = Instantiate(prefab) as GameObject;
-			objeto.transform.position =(Vector3)Random.insideUnitCircle*Random.Range(1,100);
+			objeto.transform.position =(Vector3)Random.onUnitSphere*Random.Range(1,10);  //.insideUnitSphere*Random.Range(1,10);  //.insideUnitCircle*Random.Range(1,100);
 		}
 	}
 	

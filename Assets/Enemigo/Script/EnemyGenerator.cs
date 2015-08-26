@@ -12,16 +12,9 @@ public class EnemyGenerator : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-	
-		timer -= Time.deltaTime;
-		
-		if(timer <= 0){
-			timer = 0;
+
 			ObjectPool.Instance.GetGameObjectOfType("Enemigo");
 			GameObject nuevo = ObjectPool.Instance.GetGameObjectOfType("Enemigo");
-			nuevo.transform.position = (Vector3)Random.insideUnitCircle*Random.Range(1,10);
-			
-		}
-
+			nuevo.transform.position = new Vector3(Random.Range(-10.0F, 10.0F),Random.Range(-10.0F, 10.0F),0);			
 	}
 }

@@ -19,7 +19,7 @@ public class Reciclador : MonoBehaviour {
 		ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
 		if(other.gameObject.tag != "Payer"){
-		//	ObjectPool.Instance.PoolGameObject(this.gameObject);
+			//Destroy(this.gameObject,5f);	
 		}
 	}
 }
