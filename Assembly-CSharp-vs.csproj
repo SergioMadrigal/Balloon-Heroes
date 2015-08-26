@@ -49,10 +49,10 @@
      <Compile Include="Assets\Bonus\Globos.cs" />
      <Compile Include="Assets\Bonus\ObjectPool.cs" />
      <Compile Include="Assets\Bonus\camara.cs" />
-     <Compile Include="Assets\Enemigo\EnemyController.cs" />
-     <Compile Include="Assets\Enemigo\EnemyPool.cs" />
-     <Compile Include="Assets\Enemigo\Reciclador.cs" />
-     <Compile Include="Assets\Enemigo\healtEnemy.cs" />
+     <Compile Include="Assets\Enemigo\Script\EnemyController.cs" />
+     <Compile Include="Assets\Enemigo\Script\EnemyGenerator.cs" />
+     <Compile Include="Assets\Enemigo\Script\Reciclador.cs" />
+     <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
      <Compile Include="Assets\Pause\Botones.cs" />

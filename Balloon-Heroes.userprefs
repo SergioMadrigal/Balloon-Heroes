@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\healtEnemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\EnemyGenerator.cs">
     <Files>
-      <File FileName="Assets\Enemigo\EnemyPool.cs" Line="1" Column="1" />
-      <File FileName="Assets\Bonus\ObjectPool.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemigo\healtEnemy.cs" Line="23" Column="15" />
+      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="22" Column="81" />
+      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="57" Column="76" />
+      <File FileName="Assets\Bonus\Globos.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

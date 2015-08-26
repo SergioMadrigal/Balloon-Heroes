@@ -15,7 +15,11 @@ public class Reciclador : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 
+		if(other.gameObject.tag == "Player" ){
 		ObjectPool.Instance.PoolGameObject(this.gameObject);
-	
+		}
+		if(other.gameObject.tag != "Payer"){
+		//	ObjectPool.Instance.PoolGameObject(this.gameObject);
+		}
 	}
 }

@@ -12,16 +12,12 @@ public class healtEnemy : MonoBehaviour {
 		health -= value;
 		healthBar.size = health/100f;
 
-	}
+		if(health <= 0){
 
-	void OnCollisionEnter(Collision other){
-
-		health -= value;
-		healthBar.size = health/100f;
-		if(health == 0){
-
-			gameObject.
-
+			print("Eliminado");
+			ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
+
 	}
+	
 }
