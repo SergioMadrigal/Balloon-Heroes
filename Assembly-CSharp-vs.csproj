@@ -49,9 +49,13 @@
      <Compile Include="Assets\Bonus\Globos.cs" />
      <Compile Include="Assets\Bonus\ObjectPool.cs" />
      <Compile Include="Assets\Bonus\camara.cs" />
+     <Compile Include="Assets\CargaNiveles\SetLevels.cs" />
+     <Compile Include="Assets\CargaNiveles\prefabs\Enemy.cs" />
+     <Compile Include="Assets\CargaNiveles\prueba\LoadXmlFile.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyController.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyGenerator.cs" />
      <Compile Include="Assets\Enemigo\Script\Reciclador.cs" />
+     <Compile Include="Assets\Enemigo\Script\Score.cs" />
      <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
@@ -61,7 +65,11 @@
      <Compile Include="Assets\Seleccion\Scripts\Inventory.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Slot.cs" />
+     <Compile Include="Assets\SplashScreen\SplashScreen.cs" />
+     <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Video\VideoIntro.cs" />
+     <None Include="Assets\CargaNiveles\levels.xml" />
+     <None Include="Assets\CargaNiveles\prueba\gamexmldata.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -5,32 +5,41 @@ using System.Collections;
 public class Botones : MonoBehaviour {
 
 	public GameObject pause;
-	public Canvas ScoreFinal;
+	public GameObject ScoreFinal;
 	public bool active;
 
 	void Start(){
+		active = true;
 		pause.SetActive(false);
-		ScoreFinal.enabled = false;
+		ScoreFinal.SetActive(false);
 	}
 
 	void Update(){
 
-		if(Input.GetKey(KeyCode.Q)){
+		if(Input.GetKeyDown(KeyCode.Q)){
 
 			if(active){
-				active = true;
-				print("Activado");
-				pause.SetActive(true);
-			}else{
-				active = false;
-				print("Desactivado");
 				pause.SetActive(false);
+				active = false;
+				Time.timeScale = 1;
+			}else{
+				pause.SetActive(true);
+				active = true;
+				Time.timeScale = 0;
 			}
 
 		}
-		if(Input.GetKey(KeyCode.A)){
+		if(Input.GetKeyDown(KeyCode.A)){
 
-			ScoreFinal.enabled = true;
+			if (active) {
+				
+				ScoreFinal.SetActive(false);
+				active = false;
+				
+			}else		 {
+				ScoreFinal.SetActive(true);
+				active = true;
+			}
 
 		}
 	}

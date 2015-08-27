@@ -4,8 +4,13 @@ using System.Collections;
 [RequireComponent (typeof(AudioSource))]
 public class VideoIntro : MonoBehaviour {
 
+	//private string movPath = "intro_monkey.mov";
+	
+
 	void Start() {
-		((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Play ();
+
+	//	Handheld.PlayFullScreenMovie (movPath, Color.black, FullScreenMovieControlMode.Full);
+	//	print("Reproduciendo");
 
 	}
 	void Update(){
@@ -15,8 +20,8 @@ public class VideoIntro : MonoBehaviour {
 	void DesaparecerIntro(){
 
 		if(Input.GetMouseButton(0)){
-			((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Pause();
-			gameObject.SetActive(false);
+		//	((MovieTexture)GetComponent<Renderer> ().material.mainTexture).Pause();
+		//	gameObject.SetActive(false);
 
 		}
 	}

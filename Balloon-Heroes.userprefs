@@ -1,13 +1,21 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Bonus\camara.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Video\VideoIntro.cs">
     <Files>
-      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="18" Column="105" />
-      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="57" Column="76" />
+      <File FileName="Assets\Splash_Android\SplashAnd.cs" Line="4" Column="23" />
+      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="1" Column="1" />
       <File FileName="Assets\Bonus\Globos.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="24" Column="22" />
-      <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="22" Column="6" />
-      <File FileName="Assets\Bonus\camara.cs" Line="12" Column="21" />
+      <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="1" Column="1" />
+      <File FileName="Assets\Bonus\camara.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\CargaNiveles\levels.xml" Line="1" Column="1" />
+      <File FileName="Assets\CargaNiveles\SetLevels.cs" Line="1" Column="1" />
+      <File FileName="Assets\Pause\PopUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Pause\Botones.cs" Line="1" Column="1" />
+      <File FileName="Assets\Video\VideoIntro.cs" Line="18" Column="3" />
+      <File FileName="Assets\SplashScreen\SplashScreen.cs" Line="1" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

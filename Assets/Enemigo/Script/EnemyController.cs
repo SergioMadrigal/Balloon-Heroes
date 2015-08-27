@@ -7,18 +7,18 @@ public class EnemyController : MonoBehaviour {
 	public float speedBall = 100;
 	public Vector3 destino;
 
-	void Start () {
+	public void ActivityStart () {
 		StartCoroutine("Shoot");
-
+		//Invoke("DestroyEnemy", 7f);
 	}
 
 	void Disp(){
 
 		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Sphere 1");
 		go.transform.position = transform.position;
-		GameObject seguir = GameObject.FindWithTag("Player");
+	//	GameObject seguir = GameObject.FindWithTag("Player");
 		go.GetComponent<Rigidbody>().AddForce(  (destino - transform.position).normalized * speedBall,ForceMode.Impulse);
-	//	print((seguir.transform.position - transform.position).normalized);
+
 	}
 
 	IEnumerator Shoot(){
@@ -26,4 +26,5 @@ public class EnemyController : MonoBehaviour {
 		yield return new WaitForSeconds(speed);
 		StartCoroutine("Shoot");
 	}
+
 }

@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: a71506d3d8f772247936b29000b9866f
+timeCreated: 1440692841
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: joint1
+    100004: pasted__pasted__polySurface1CPSproxy1
+    100006: pasted__pasted__polySurface1CPSproxy2
+    100008: pasted__pSphere1CPSproxy1
+    100010: pCone1CPSproxy1
+    100012: pCube1CPSproxy1
+    100014: pCube3CPSproxy1
+    100016: pCube5CPSproxy1
+    100018: pCube6CPSproxy1
+    100020: pCylinder1CPSproxy1
+    100022: pSphere2CPSproxy1
+    400000: //RootNode
+    400002: joint1
+    400004: pasted__pasted__polySurface1CPSproxy1
+    400006: pasted__pasted__polySurface1CPSproxy2
+    400008: pasted__pSphere1CPSproxy1
+    400010: pCone1CPSproxy1
+    400012: pCube1CPSproxy1
+    400014: pCube3CPSproxy1
+    400016: pCube5CPSproxy1
+    400018: pCube6CPSproxy1
+    400020: pCylinder1CPSproxy1
+    400022: pSphere2CPSproxy1
+    2300000: pasted__pasted__polySurface1CPSproxy1
+    2300002: pasted__pasted__polySurface1CPSproxy2
+    2300004: pasted__pSphere1CPSproxy1
+    2300006: pCone1CPSproxy1
+    2300008: pCube1CPSproxy1
+    2300010: pCube3CPSproxy1
+    2300012: pCube5CPSproxy1
+    2300014: pCube6CPSproxy1
+    2300016: pCylinder1CPSproxy1
+    2300018: pSphere2CPSproxy1
+    3300000: pasted__pasted__polySurface1CPSproxy1
+    3300002: pasted__pasted__polySurface1CPSproxy2
+    3300004: pasted__pSphere1CPSproxy1
+    3300006: pCone1CPSproxy1
+    3300008: pCube1CPSproxy1
+    3300010: pCube3CPSproxy1
+    3300012: pCube5CPSproxy1
+    3300014: pCube6CPSproxy1
+    3300016: pCylinder1CPSproxy1
+    3300018: pSphere2CPSproxy1
+    4300000: pCube1CPSproxy1
+    4300002: pCone1CPSproxy1
+    4300004: pCube3CPSproxy1
+    4300006: pCube6CPSproxy1
+    4300008: pasted__pasted__polySurface1CPSproxy1
+    4300010: pasted__pasted__polySurface1CPSproxy2
+    4300012: pCube5CPSproxy1
+    4300014: pCylinder1CPSproxy1
+    4300016: pSphere2CPSproxy1
+    4300018: pasted__pSphere1CPSproxy1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/pasted__pasted__polySurface1CPSproxy1
+        weight: 1
+      - path: joint1/pasted__pasted__polySurface1CPSproxy2
+        weight: 1
+      - path: joint1/pasted__pSphere1CPSproxy1
+        weight: 1
+      - path: joint1/pCone1CPSproxy1
+        weight: 1
+      - path: joint1/pCube1CPSproxy1
+        weight: 1
+      - path: joint1/pCube3CPSproxy1
+        weight: 1
+      - path: joint1/pCube5CPSproxy1
+        weight: 1
+      - path: joint1/pCube6CPSproxy1
+        weight: 1
+      - path: joint1/pCylinder1CPSproxy1
+        weight: 1
+      - path: joint1/pSphere2CPSproxy1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

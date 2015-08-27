@@ -4,8 +4,10 @@ using System.Collections;
 public class Reciclador : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void OnEnable () {
 	
+		Invoke("DestroyEnemy",7f);
+
 	}
 	
 	// Update is called once per frame
@@ -18,8 +20,11 @@ public class Reciclador : MonoBehaviour {
 		if(other.gameObject.tag == "Player" ){
 		ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
-		if(other.gameObject.tag != "Payer"){
-			//Destroy(this.gameObject,5f);	
-		}
 	}
+
+	void DestroyEnemy(){
+		
+		ObjectPool.Instance.PoolGameObject(gameObject);
+	}
+
 }

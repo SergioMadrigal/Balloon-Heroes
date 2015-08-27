@@ -4,7 +4,8 @@ using System.Collections;
 public class Globos : MonoBehaviour {
 
 	public float timer = 15.0f;
-	float valor = 100;
+	int valor = 100;
+
 	//public GameObject marcador;
 
 	void Update () {
@@ -15,16 +16,20 @@ public class Globos : MonoBehaviour {
 			timer = 0;
 			print ("Tiempo terminado");
 		}
-	 
-		
-		}
+	}
 
 	void OnMouseDown(){
+
+		
+		Score.score += valor;
+		print(Score.score);
+
 		Destroy (gameObject);
 
-		valor += + 100;
-		print(valor);
-
 	}
+
+
+
+	
 	
 }

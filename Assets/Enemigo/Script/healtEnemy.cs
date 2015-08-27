@@ -8,6 +8,10 @@ public class healtEnemy : MonoBehaviour {
 	public float health = 100;
 	public float value;
 
+	void OnEnable () {
+		Invoke("DestroyEnemy", 7f);
+	}
+
 	public void Damage(float value){
 		health -= value;
 		healthBar.size = health/100f;
@@ -18,6 +22,10 @@ public class healtEnemy : MonoBehaviour {
 			ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
 
+	}
+	void DestroyEnemy(){
+		
+		ObjectPool.Instance.PoolGameObject(gameObject);
 	}
 	
 }
