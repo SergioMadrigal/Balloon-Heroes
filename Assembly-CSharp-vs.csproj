@@ -52,11 +52,13 @@
      <Compile Include="Assets\CargaNiveles\SetLevels.cs" />
      <Compile Include="Assets\CargaNiveles\prefabs\Enemy.cs" />
      <Compile Include="Assets\CargaNiveles\prueba\LoadXmlFile.cs" />
+     <Compile Include="Assets\ChargeLvl.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyController.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyGenerator.cs" />
      <Compile Include="Assets\Enemigo\Script\Reciclador.cs" />
      <Compile Include="Assets\Enemigo\Script\Score.cs" />
      <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
+     <Compile Include="Assets\InstanciadorGlobos.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
      <Compile Include="Assets\Pause\Botones.cs" />
@@ -68,6 +70,7 @@
      <Compile Include="Assets\SplashScreen\SplashScreen.cs" />
      <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Video\VideoIntro.cs" />
+     <Compile Include="Assets\scrollRect.cs" />
      <None Include="Assets\CargaNiveles\levels.xml" />
      <None Include="Assets\CargaNiveles\prueba\gamexmldata.xml" />
  <Reference Include="UnityEngine.UI">

@@ -6,6 +6,7 @@
 		<object name="Sphere" 	time="15"></object>
 		<object name="Cube" 	time="23"></object>
 		<object name="Sphere"	time="24"></object>
+		<object name="Cube"		time="24"></object>
 		<object name="Cube" 	time="26"></object>
 	</level>
 	<level lv="2"><!-- level 2 ! -->

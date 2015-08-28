@@ -22,7 +22,7 @@ public class EnemyGenerator : MonoBehaviour {
 
 
 
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(7);
 		GameObject nuevo = ObjectPool.Instance.GetGameObjectOfType("Enemigo");
 		nuevo.transform.position = new Vector3(Random.Range(5.0F, 10.0F),Random.Range(5.0F, 10.0F),0);
 		contador ++;
