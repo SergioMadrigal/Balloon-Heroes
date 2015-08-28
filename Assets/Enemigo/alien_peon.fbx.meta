@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 022848225dc30934796deb9fc1b4c761
+timeCreated: 1440799553
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BaseCuello
+    100004: Cabeza
+    100006: Cabeza 1
+    100008: Cadera
+    100010: CodoDer
+    100012: CodoIzq
+    100014: controller1
+    100016: controller2
+    100018: controller3
+    100020: controller4
+    100022: controller5
+    100024: controller6
+    100026: Cuerpo
+    100028: Dedo01
+    100030: Dedo02
+    100032: Dedo03
+    100034: Dedo04
+    100036: Dedo05
+    100038: Dedo06
+    100040: Estomago
+    100042: group
+    100044: HombroDer
+    100046: HombroIzq
+    100048: ikHandle2
+    100050: ikHandle3
+    100052: ikHandle4
+    100054: ikHandle5
+    100056: Jetpack
+    100058: joint15
+    100060: joint16
+    100062: joint5
+    100064: ManoDer
+    100066: ManoIzq
+    100068: Pecho
+    100070: PierDer
+    100072: PierIzq
+    100074: Pistola
+    100076: pSphere1
+    100078: RodDer
+    100080: RodIzq
+    100082: Tentaculos
+    400000: //RootNode
+    400002: BaseCuello
+    400004: Cabeza
+    400006: Cabeza 1
+    400008: Cadera
+    400010: CodoDer
+    400012: CodoIzq
+    400014: controller1
+    400016: controller2
+    400018: controller3
+    400020: controller4
+    400022: controller5
+    400024: controller6
+    400026: Cuerpo
+    400028: Dedo01
+    400030: Dedo02
+    400032: Dedo03
+    400034: Dedo04
+    400036: Dedo05
+    400038: Dedo06
+    400040: Estomago
+    400042: group
+    400044: HombroDer
+    400046: HombroIzq
+    400048: ikHandle2
+    400050: ikHandle3
+    400052: ikHandle4
+    400054: ikHandle5
+    400056: Jetpack
+    400058: joint15
+    400060: joint16
+    400062: joint5
+    400064: ManoDer
+    400066: ManoIzq
+    400068: Pecho
+    400070: PierDer
+    400072: PierIzq
+    400074: Pistola
+    400076: pSphere1
+    400078: RodDer
+    400080: RodIzq
+    400082: Tentaculos
+    2300000: Jetpack
+    2300002: Pistola
+    2300004: pSphere1
+    2300006: Tentaculos
+    3300000: Jetpack
+    3300002: Pistola
+    3300004: pSphere1
+    3300006: Tentaculos
+    4300000: Cuerpo
+    4300002: Cabeza
+    4300004: Tentaculos
+    4300006: pSphere1
+    4300008: Pistola
+    4300010: Jetpack
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Cabeza
+    13700002: Cuerpo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

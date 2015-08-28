@@ -1,11 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\healtEnemy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Pause\Botones.cs">
     <Files>
-      <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="25" Column="36" />
-      <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="1" Column="1" />
+      <File FileName="Assets\Seleccion\Scripts\play.cs" Line="7" Column="33" />
       <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Splash_Android\SplashAnd.cs" Line="1" Column="1" />
+      <File FileName="Assets\Menu\Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets\Models\SceneFade\sceneFade.js" Line="1" Column="1" />
+      <File FileName="Assets\Pause\Botones.cs" Line="58" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

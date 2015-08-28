@@ -14,34 +14,27 @@ public class Botones : MonoBehaviour {
 		ScoreFinal.SetActive(false);
 	}
 
-	void Update(){
-
-		if(Input.GetKeyDown(KeyCode.Q)){
+	public void freezePause(){
 
 			if(active){
-				pause.SetActive(false);
-				active = false;
-				Time.timeScale = 1;
-			}else{
 				pause.SetActive(true);
 				active = true;
 				Time.timeScale = 0;
-			}
+			}//else{
+			//	pause.SetActive(true);
+			//	active = true;
+			//	Time.timeScale = 0;
+			//}
 
-		}
-		if(Input.GetKeyDown(KeyCode.A)){
-
-			if (active) {
+			//if (active) {
 				
-				ScoreFinal.SetActive(false);
-				active = false;
+			//	ScoreFinal.SetActive(false);
+			//	active = false;
 				
-			}else		 {
-				ScoreFinal.SetActive(true);
-				active = true;
-			}
-
-		}
+			//}else		 {
+			//	ScoreFinal.SetActive(true);
+			//	active = true;
+			//}
 	}
 
     public void RepeatLevel(){
@@ -60,6 +53,8 @@ public class Botones : MonoBehaviour {
 		Application.LoadLevel("");
 	}
 	public void PlayLevel(){
+		pause.SetActive(false);
+			active = false;
 		Time.timeScale = 1;
 
 	}
