@@ -126,11 +126,128 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .329121083
+        functionName: ShootPeon
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cabeza
+        weight: 1
+      - path: controller6
+        weight: 1
+      - path: controller6/Cadera
+        weight: 1
+      - path: controller6/Cadera/Estomago
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/BaseCuello
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/BaseCuello/Cabeza 1
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/BaseCuello/Cabeza 1/joint15
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/BaseCuello/Cabeza 1/pSphere1
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/BaseCuello/Cabeza 1/Tentaculos
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer/CodoDer
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer/CodoDer/ManoDer
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer/CodoDer/ManoDer/Dedo04
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer/CodoDer/ManoDer/Dedo04/Dedo05
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroDer/CodoDer/ManoDer/Dedo04/Dedo05/Dedo06
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq/ManoIzq
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq/ManoIzq/Dedo01
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq/ManoIzq/Dedo01/Dedo02
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq/ManoIzq/Dedo01/Dedo02/Dedo03
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/HombroIzq/CodoIzq/ManoIzq/Pistola
+        weight: 1
+      - path: controller6/Cadera/Estomago/Pecho/Jetpack
+        weight: 1
+      - path: controller6/Cadera/PierDer
+        weight: 1
+      - path: controller6/Cadera/PierDer/RodDer
+        weight: 1
+      - path: controller6/Cadera/PierDer/RodDer/joint16
+        weight: 1
+      - path: controller6/Cadera/PierIzq
+        weight: 1
+      - path: controller6/Cadera/PierIzq/RodIzq
+        weight: 1
+      - path: controller6/Cadera/PierIzq/RodIzq/joint5
+        weight: 1
+      - path: controller6/controller1
+        weight: 1
+      - path: controller6/controller2
+        weight: 1
+      - path: controller6/controller3
+        weight: 1
+      - path: controller6/controller4
+        weight: 1
+      - path: controller6/controller5
+        weight: 1
+      - path: Cuerpo
+        weight: 1
+      - path: group
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: ikHandle5
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 15
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

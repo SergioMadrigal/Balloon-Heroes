@@ -68,6 +68,7 @@
      <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Slot.cs" />
      <Compile Include="Assets\Seleccion\Scripts\play.cs" />
+     <Compile Include="Assets\ShootAlien.cs" />
      <Compile Include="Assets\SplashScreen\SplashScreen.cs" />
      <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Video\VideoIntro.cs" />
