@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BotonesMenu : MonoBehaviour {
 
-	public void ChangeToPlay(int sceneToChangeTo){
+	public void ChangeToPlay(){
 		
 		Application.LoadLevel ("Video");
 

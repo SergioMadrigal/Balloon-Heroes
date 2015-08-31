@@ -1,13 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\EnemyGenerator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\Reciclador.cs">
     <Files>
-      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="28" Column="1" />
-      <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="40" Column="64" />
-      <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="7" Column="21" />
+      <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="38" Column="56" />
       <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="1" Column="1" />
-      <File FileName="Assets\ShootAlien.cs" Line="12" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

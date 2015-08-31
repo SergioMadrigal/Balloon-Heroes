@@ -17,24 +17,10 @@ public class Botones : MonoBehaviour {
 	public void freezePause(){
 
 			if(active){
+			active = true;
 				pause.SetActive(true);
-				active = true;
 				Time.timeScale = 0;
-			}//else{
-			//	pause.SetActive(true);
-			//	active = true;
-			//	Time.timeScale = 0;
-			//}
-
-			//if (active) {
-				
-			//	ScoreFinal.SetActive(false);
-			//	active = false;
-				
-			//}else		 {
-			//	ScoreFinal.SetActive(true);
-			//	active = true;
-			//}
+			}
 	}
 
     public void RepeatLevel(){
@@ -46,15 +32,17 @@ public class Botones : MonoBehaviour {
 		print("Cambo");
 	}
 	public void RetryLevel(){
-		Application.LoadLevel("");
+		Application.LoadLevel("Enemigo");
+		Time.timeScale=1;
 	}
 
 	public void HomeLevel(){
-		Application.LoadLevel("");
+		Application.LoadLevel("Menu");
+		Time.timeScale = 1;
 	}
 	public void PlayLevel(){
 		pause.SetActive(false);
-			active = false;
+		//	active = false;
 		Time.timeScale = 1;
 
 	}

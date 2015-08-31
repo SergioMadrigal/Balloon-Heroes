@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Models\SceneFade\sceneFade.js" />
+     <None Include="Assets\Enemigo\levels 1.xml" />
      <None Include="Assets\CargaNiveles\levels.xml" />
      <None Include="Assets\CargaNiveles\prueba\gamexmldata.xml" />
  <Reference Include="UnityEngine.UI">

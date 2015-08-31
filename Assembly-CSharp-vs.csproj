@@ -53,11 +53,14 @@
      <Compile Include="Assets\CargaNiveles\prefabs\Enemy.cs" />
      <Compile Include="Assets\CargaNiveles\prueba\LoadXmlFile.cs" />
      <Compile Include="Assets\ChargeLvl.cs" />
+     <Compile Include="Assets\ControllerEnemy.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyController.cs" />
      <Compile Include="Assets\Enemigo\Script\EnemyGenerator.cs" />
      <Compile Include="Assets\Enemigo\Script\Reciclador.cs" />
      <Compile Include="Assets\Enemigo\Script\Score.cs" />
+     <Compile Include="Assets\Enemigo\Script\ShootAlien.cs" />
      <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
+     <Compile Include="Assets\Enemigo\SetLevels1.cs" />
      <Compile Include="Assets\InstanciadorGlobos.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
@@ -68,11 +71,10 @@
      <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Slot.cs" />
      <Compile Include="Assets\Seleccion\Scripts\play.cs" />
-     <Compile Include="Assets\ShootAlien.cs" />
-     <Compile Include="Assets\SplashScreen\SplashScreen.cs" />
      <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Video\VideoIntro.cs" />
      <Compile Include="Assets\scrollRect.cs" />
+     <None Include="Assets\Enemigo\levels 1.xml" />
      <None Include="Assets\CargaNiveles\levels.xml" />
      <None Include="Assets\CargaNiveles\prueba\gamexmldata.xml" />
  <Reference Include="UnityEngine.UI">

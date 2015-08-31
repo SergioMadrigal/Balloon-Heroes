@@ -27,5 +27,17 @@ public class healtEnemy : MonoBehaviour {
 		
 		ObjectPool.Instance.PoolGameObject(gameObject);
 	}
+
+	public void OnCollisionEnter(Collision nave){
+
+		health -= value;
+		healthBar.size = health/100f;
+
+		if(health <=0){
+
+			ObjectPool.Instance.PoolGameObject(this.gameObject);
+		}
+
+	}
 	
 }
