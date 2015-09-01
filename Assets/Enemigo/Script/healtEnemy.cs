@@ -4,7 +4,7 @@ using System.Collections;
 
 public class healtEnemy : MonoBehaviour {
 
-	public Scrollbar healthBar;
+	public Image vida;
 	public float health = 100;
 	public float value;
 
@@ -13,12 +13,16 @@ public class healtEnemy : MonoBehaviour {
 	}
 
 	public void Damage(float value){
-		health -= value;
-		healthBar.size = health/100f;
+		health -= value*100;
 
+		vida.fillAmount -= value;
+	
 		if(health <= 0){
 
-			print("Eliminado");
+			GameObject posision = ObjectPool.Instance.GetGameObjectOfType("Explosion");
+
+			posision.transform.position = transform.position;
+				print("Eliminado");
 			ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
 
@@ -31,7 +35,7 @@ public class healtEnemy : MonoBehaviour {
 	public void OnCollisionEnter(Collision nave){
 
 		health -= value;
-		healthBar.size = health/100f;
+//		healthBar.size = health/100f;
 
 		if(health <=0){
 

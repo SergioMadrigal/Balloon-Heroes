@@ -7,22 +7,45 @@ public class Botones : MonoBehaviour {
 	public GameObject pause;
 	public GameObject ScoreFinal;
 	public bool active;
+	AudioSource audioSource;
+	AudioClip clip;
 
 	void Start(){
+	
 		active = true;
 		pause.SetActive(false);
 		ScoreFinal.SetActive(false);
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	public void freezePause(){
-
-			if(active){
+		if(active){
 			active = true;
+			audioSource.Play();
 				pause.SetActive(true);
 				Time.timeScale = 0;
 			}
 	}
+	public void RetryLevel(){
+		audioSource.Play();
+	//	Application.LoadLevel("Enemigo");
+		Time.timeScale=1;
+		StartCoroutine(playSondRetry());
 
+	}
+	
+	public void HomeLevel(){
+		//audioSource.Play();
+	//	Application.LoadLevel("Menu");
+		Time.timeScale = 1;
+		StartCoroutine(playSound());
+	}
+	public void PlayLevel(){
+		audioSource.Play();
+		pause.SetActive(false);
+		Time.timeScale = 1;
+		
+	}
     public void RepeatLevel(){
 		Application.LoadLevel("Score");
 		print("Reinicio");
@@ -31,19 +54,20 @@ public class Botones : MonoBehaviour {
 		Application.LoadLevel("bonus");
 		print("Cambo");
 	}
-	public void RetryLevel(){
-		Application.LoadLevel("Enemigo");
-		Time.timeScale=1;
+
+	 IEnumerator playSound(){
+		audioSource.Play();
+		yield return new WaitForSeconds(audioSource.clip.length);
+		Application.LoadLevel("Menu");    
+		//StartCoroutine(playSound());
 	}
 
-	public void HomeLevel(){
-		Application.LoadLevel("Menu");
-		Time.timeScale = 1;
-	}
-	public void PlayLevel(){
-		pause.SetActive(false);
-		//	active = false;
-		Time.timeScale = 1;
+	IEnumerator playSondRetry(){
+		audioSource.Play();
+		yield return new WaitForSeconds(audioSource.clip.length);
+		Application.LoadLevel("Enemigo");
+
+
 
 	}
 }

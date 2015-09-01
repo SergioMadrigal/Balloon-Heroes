@@ -5,6 +5,7 @@ public class Globos : MonoBehaviour {
 
 	public float timer = 15.0f;
 	int valor = 100;
+	public GameObject [] ballons;
 
 	//public GameObject marcador;
 
