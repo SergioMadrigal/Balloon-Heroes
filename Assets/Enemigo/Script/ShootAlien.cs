@@ -18,10 +18,10 @@ public class ShootAlien : MonoBehaviour {
 		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Sphere 1");
 		go.transform.position = balaPeon.position;
 		go.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
-		StartCoroutine(audio());
+		StartCoroutine(audioShoot());
 	}
 
-	IEnumerator audio(){
+	IEnumerator audioShoot(){
 		audioSource.Play();
 		yield return new WaitForSeconds(audioSource.clip.length);
 

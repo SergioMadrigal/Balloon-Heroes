@@ -1,13 +1,14 @@
 <levels>
 	<level lv="1"><!-- level 1 ! -->
-		<name>Level 1</name>
+	<!--	<name>Level 1</name>
 		<object name="alien_peon" 	time="5" ></object>
 		<object name="Enemigo" 	time="10"></object>
 		<object name="alien_peon" 	time="15"></object>
 		<object name="Enemigo" 	time="23"></object>
 		<object name="Enemigo"	time="24"></object>
 		<object name="alien_peon"		time="24"></object>
-		<object name="Enemigo" 	time="26"></object>
+		<object name="Enemigo" 	time="26"></object> -->
+		<object name="Enemigo" time="60"></object>
 	</level>
 	<level lv="2"><!-- level 2 ! -->
 		<name >Level 2</name>

@@ -8,9 +8,10 @@ public class HealthBoss : MonoBehaviour {
 	public float health = 200;
 	public float value;
 
-	void OnEnable () {
-		Invoke("DestroyEnemy", 7f);
-	}
+	//void OnEnable () {
+		//Invoke("DestroyEnemy", 7f);
+//		StartCoroutine(DestroyEnemy());
+	//}
 
 	
 public void Damage(float value){

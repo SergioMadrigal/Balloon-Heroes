@@ -106,14 +106,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .126116335
+      - time: .632263899
         functionName: ShootBossGun
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .632263899
+      - time: .224509239
         functionName: ShootBossGun
         data: 
         objectReferenceParameter: {instanceID: 0}

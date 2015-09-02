@@ -24,10 +24,10 @@ public class ShootBoss : MonoBehaviour {
 		canon.transform.position = cañon2.position;
 		canon.GetComponent<Rigidbody>().AddForce((destino-transform.position).normalized * speedBall,ForceMode.Impulse);
 
-		StartCoroutine(audio());
+		StartCoroutine(audioBoss());
 	}
 	
-	IEnumerator audio(){
+	IEnumerator audioBoss(){
 		audioSource.Play();
 		yield return new WaitForSeconds(audioSource.clip.length);
 		

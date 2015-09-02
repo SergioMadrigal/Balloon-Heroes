@@ -5,6 +5,8 @@ public class EnemyGenerator : MonoBehaviour {
 
 	public float timer = 5.0f;
 	public int contador =0;
+	AudioClip clip;
+	AudioSource finalSound;
 
 	public Transform [] carriles;
 	public Transform [] carrilesPeon;
@@ -12,17 +14,15 @@ public class EnemyGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
  
+		finalSound = GetComponent<AudioSource>();
+
 		StartCoroutine(EnemyTime());
 		StartCoroutine(EnemyPeon());
+		StartCoroutine(BossApear());
 	
 	}
-	// Update is called once per frame
-	//void Update () {			
-	//}
 
 	IEnumerator EnemyTime(){
-
-
 
 		yield return new WaitForSeconds(7);
 		GameObject nuevo = ObjectPool.Instance.GetGameObjectOfType("Enemigo");
@@ -41,6 +41,18 @@ public class EnemyGenerator : MonoBehaviour {
 			
 		StartCoroutine(EnemyPeon());
 	}
+
+	IEnumerator BossApear (){
+
+		yield return new WaitForSeconds(60);
+		finalSound.Play();
+		GameObject boss = ObjectPool.Instance.GetGameObjectOfType("demolisher");
+		boss.transform.position =new Vector3(-4.26f,5.1f,0);	
+		StartCoroutine(BossApear());
+
+	}
+
+
 
 
 }
