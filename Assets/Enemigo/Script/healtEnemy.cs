@@ -34,11 +34,14 @@ public class healtEnemy : MonoBehaviour {
 
 	public void OnCollisionEnter(Collision nave){
 
-		health -= value;
-//		healthBar.size = health/100f;
+		health -= value*100;
+		
+		vida.fillAmount -= value;
 
 		if(health <=0){
 
+			GameObject posision = ObjectPool.Instance.GetGameObjectOfType("Explosion");
+			posision.transform.position = transform.position;
 			ObjectPool.Instance.PoolGameObject(this.gameObject);
 		}
 

@@ -61,6 +61,7 @@
      <Compile Include="Assets\Enemigo\Script\SetLevels1.cs" />
      <Compile Include="Assets\Enemigo\Script\ShootAlien.cs" />
      <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
+     <Compile Include="Assets\HealthBoss.cs" />
      <Compile Include="Assets\Menu\BotonesMenu.cs" />
      <Compile Include="Assets\Menu\Splash.cs" />
      <Compile Include="Assets\Pause\Botones.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
      <Compile Include="Assets\Seleccion\Scripts\Slot.cs" />
      <Compile Include="Assets\Seleccion\Scripts\play.cs" />
+     <Compile Include="Assets\ShootBoss.cs" />
      <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Video\VideoIntro.cs" />
      <Compile Include="Assets\scrollRect.cs" />

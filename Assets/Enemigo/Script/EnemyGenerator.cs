@@ -17,10 +17,8 @@ public class EnemyGenerator : MonoBehaviour {
 	
 	}
 	// Update is called once per frame
-	void Update () {
-
-				
-	}
+	//void Update () {			
+	//}
 
 	IEnumerator EnemyTime(){
 
@@ -41,7 +39,6 @@ public class EnemyGenerator : MonoBehaviour {
 		GameObject peon = ObjectPool.Instance.GetGameObjectOfType("alien_peon");
 		peon.transform.position = carrilesPeon[Random.Range(0,carriles.Length-1)].position + (Vector3)Random.insideUnitCircle *Random.Range(1f,3f);//new Vector3(Random.Range(1.0F, 1.0F),Random.Range(-5.0F, 10.0F),0);
 			
-		//peon.GetComponentInChildren<EnemyController>().ActivityStart();
 		StartCoroutine(EnemyPeon());
 	}
 
