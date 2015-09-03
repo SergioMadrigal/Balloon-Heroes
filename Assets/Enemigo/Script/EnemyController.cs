@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour {
 	void Disp(){
 
 
-		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Sphere 1");
+		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("proyectilShip");
 		go.transform.position = transform.position;
 		go.GetComponent<Rigidbody>().AddForce(  (destino - transform.position).normalized * speedBall,ForceMode.Impulse);
 

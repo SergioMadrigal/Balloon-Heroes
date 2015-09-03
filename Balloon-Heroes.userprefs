@@ -1,16 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\EnemyGenerator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enemigo\Script\HealthBoss.cs">
     <Files>
-      <File FileName="Assets\Enemigo\Script\HealthBoss.cs" Line="14" Column="4" />
-      <File FileName="Assets\Enemigo\Script\ShootBoss.cs" Line="27" Column="27" />
-      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="48" Column="21" />
-      <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="23" Column="29" />
+      <File FileName="Assets\Enemigo\Script\HealthBoss.cs" Line="39" Column="5" />
+      <File FileName="Assets\Enemigo\Script\ExplosionController.cs" Line="32" Column="36" />
+      <File FileName="Assets\Enemigo\Script\ShootBoss.cs" Line="30" Column="1" />
+      <File FileName="Assets\Enemigo\Script\EnemyGenerator.cs" Line="26" Column="3" />
+      <File FileName="Assets\Enemigo\Script\healtEnemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Enemigo\Script\Reciclador.cs" Line="1" Column="1" />
       <File FileName="Assets\Enemigo\Script\EnemyController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemigo\Script\ExplosionController.cs" Line="30" Column="1" />
-      <File FileName="Assets\Enemigo\Script\ShootAlien.cs" Line="21" Column="28" />
-      <File FileName="Assets\Bonus\ObjectPool.cs" Line="28" Column="1" />
+      <File FileName="Assets\Enemigo\Script\ShootAlien.cs" Line="1" Column="1" />
+      <File FileName="Assets\Bonus\ObjectPool.cs" Line="28" Column="2" />
+      <File FileName="Assets\Menu\BotonesMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Pause\Botones.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

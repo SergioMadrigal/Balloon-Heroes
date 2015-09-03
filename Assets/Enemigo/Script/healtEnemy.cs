@@ -34,6 +34,7 @@ public class healtEnemy : MonoBehaviour {
 
 	}
 	void DestroyEnemy(){
+
 		
 		ObjectPool.Instance.PoolGameObject(gameObject);
 	}

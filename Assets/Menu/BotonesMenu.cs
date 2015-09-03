@@ -3,24 +3,27 @@ using System.Collections;
 
 public class BotonesMenu : MonoBehaviour {
 
+	AudioClip clip;
+	AudioSource audioSource;
+
+	void Start(){
+		audioSource = GetComponent<AudioSource>();
+	}
+
 	public void ChangeToPlay(){
-		
-		Application.LoadLevel ("Video");
+	//	Application.LoadLevel ("Video");
+		StartCoroutine(soundPlay());
+	}
+
+	public void ChangeToSkip(){
+		Application.LoadLevel ("Seleccion");
+	}
+
+	IEnumerator soundPlay(){
+		audioSource.Play();
+		yield return new WaitForSeconds(audioSource.clip.length);
+		Application.LoadLevel("Video");    
 
 	}
-	public void ChangeToFB(int sceneToChangeToFB){
-		
-		Application.LoadLevel ("Game");
-		
-	}
-	public void ChangeToShop(int sceneToChangeToShop){
-		
-		Application.LoadLevel ("Game");
-		
-	}
-	public void ChangeToSkip(int sceneToChangeToSkip){
-		
-		Application.LoadLevel ("Seleccion");
-		
-	}
+
 }

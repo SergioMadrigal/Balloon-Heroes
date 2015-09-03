@@ -25,7 +25,7 @@ public class ObjectPool : MonoBehaviour {
 		foreach (PrefabPool objectPrefab in prefabs) {
 			generalPool[index] = new List<GameObject>	();
 			for(int i = 0; i < objectPrefab.amountInBuffer; i++){
-				GameObject temp = Instantiate(objectPrefab.prefab) as GameObject;
+					GameObject temp = Instantiate(objectPrefab.prefab) as GameObject;
 				temp.name = objectPrefab.prefab.name;
 				PoolGameObject(temp);
 			}

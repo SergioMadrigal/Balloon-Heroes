@@ -15,7 +15,7 @@ public class ExplosionController : MonoBehaviour {
 
 		GetComponent<ParticleSystem>().Play();
 		Invoke("RecicleParticle",5f);
-		StartCoroutine(audio());
+
 
 	}
 	
@@ -26,9 +26,9 @@ public class ExplosionController : MonoBehaviour {
 	
 	}
 
-	IEnumerator audio(){
+	IEnumerator audioExplosion(){
 		audioSource.Play();
 		yield return new WaitForSeconds(audioSource.clip.length);
-		
+		StartCoroutine(audioExplosion());
 	}
 }
