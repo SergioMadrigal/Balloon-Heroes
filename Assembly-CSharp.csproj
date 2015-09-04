@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{EA1CA4AD-7953-72B3-22D6-9899CE0EB997}</ProjectGuid>
+	<ProjectGuid>{F1FBD46E-AFFC-0B6E-81B5-B3D1436621CF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,39 +46,43 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Bonus\Globos.cs" />
-     <Compile Include="Assets\Bonus\ObjectPool.cs" />
-     <Compile Include="Assets\Bonus\camara.cs" />
-     <Compile Include="Assets\CargaNiveles\SetLevels.cs" />
-     <Compile Include="Assets\CargaNiveles\prefabs\Enemy.cs" />
-     <Compile Include="Assets\CargaNiveles\prueba\LoadXmlFile.cs" />
      <Compile Include="Assets\ChargeLvl.cs" />
-     <Compile Include="Assets\Enemigo\Script\EnemyController.cs" />
-     <Compile Include="Assets\Enemigo\Script\EnemyGenerator.cs" />
-     <Compile Include="Assets\Enemigo\Script\ExplosionController.cs" />
-     <Compile Include="Assets\Enemigo\Script\HealthBoss.cs" />
-     <Compile Include="Assets\Enemigo\Script\Reciclador.cs" />
-     <Compile Include="Assets\Enemigo\Script\Score.cs" />
-     <Compile Include="Assets\Enemigo\Script\SetLevels1.cs" />
-     <Compile Include="Assets\Enemigo\Script\ShootAlien.cs" />
-     <Compile Include="Assets\Enemigo\Script\ShootBoss.cs" />
-     <Compile Include="Assets\Enemigo\Script\healtEnemy.cs" />
-     <Compile Include="Assets\Menu\BotonesMenu.cs" />
-     <Compile Include="Assets\Menu\Splash.cs" />
-     <Compile Include="Assets\Pause\Botones.cs" />
-     <Compile Include="Assets\Pause\InstanciadorGlobos.cs" />
-     <Compile Include="Assets\Pause\PopUp.cs" />
-     <Compile Include="Assets\Seleccion\Scripts\DragHandler.cs" />
-     <Compile Include="Assets\Seleccion\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Seleccion\Scripts\Personajes.cs" />
-     <Compile Include="Assets\Seleccion\Scripts\Slot.cs" />
-     <Compile Include="Assets\Seleccion\Scripts\play.cs" />
-     <Compile Include="Assets\Splash_Android\SplashAnd.cs" />
-     <Compile Include="Assets\Video\VideoIntro.cs" />
-     <Compile Include="Assets\scrollRect.cs" />
-     <None Include="Assets\Enemigo\Script\levels 1.xml" />
-     <None Include="Assets\CargaNiveles\levels.xml" />
-     <None Include="Assets\CargaNiveles\prueba\gamexmldata.xml" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\Botones.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\EnemyController.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\EnemyGenerator.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\HealthBoss.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\ObjectPool.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\Reciclador.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\SetLevels1.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\ShootAlien.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\ShootBoss.cs" />
+     <Compile Include="Assets\Enemies\Enemigo\Script\healtEnemy.cs" />
+     <Compile Include="Assets\Enemies\Menu\BotonesMenu.cs" />
+     <Compile Include="Assets\Enemies\Menu\Splash.cs" />
+     <Compile Include="Assets\Enemies\Splash_Android\SplashAnd.cs" />
+     <Compile Include="Assets\Game\HealingTableBalloons.cs" />
+     <Compile Include="Assets\Prototipos\CargaNiveles\SetLevels.cs" />
+     <Compile Include="Assets\Prototipos\CargaNiveles\prefabs\Enemy.cs" />
+     <Compile Include="Assets\Prototipos\CargaNiveles\prueba\LoadXmlFile.cs" />
+     <Compile Include="Assets\Prototipos\Vida[Personaje]\CharacterLife.cs" />
+     <Compile Include="Assets\PrototiposConAssets\Background Scrolling\BG_Scroll.cs" />
+     <Compile Include="Assets\PrototiposConAssets\BarradeVida_Tabla\BarLife.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\CharactLifeOnTable.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\DragDropScript.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\DragDropScript_bckup.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\LoadNewCharDrag.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\RaycastDrag.cs" />
+     <Compile Include="Assets\PrototiposConAssets\DragDropPersonajes\SlotCharacter.cs" />
+     <Compile Include="Assets\PrototiposConAssets\LoadCharacter\CharacterButton.cs" />
+     <Compile Include="Assets\PrototiposConAssets\LoadCharacter\LoadNewCharacter.cs" />
+     <Compile Include="Assets\PrototiposConAssets\Personajes\ActiveBalloon.cs" />
+     <Compile Include="Assets\PrototiposConAssets\Personajes\BoneBullet.cs" />
+     <Compile Include="Assets\PrototiposConAssets\Personajes\Bullet.cs" />
+     <Compile Include="Assets\PrototiposConAssets\Personajes\BulletPooling.cs" />
+     <Compile Include="Assets\PrototiposConAssets\SaludDaño_Tabla\TableLife.cs" />
+     <None Include="Assets\Enemies\Enemigo\Script\levels 1.xml" />
+     <None Include="Assets\Prototipos\CargaNiveles\levels.xml" />
+     <None Include="Assets\Prototipos\CargaNiveles\prueba\gamexmldata.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
