@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: 72b5a4b8e20964e4286e4f3bd0e36876
+labels:
+- levelup
+- world
+- gate
+- level
+- mission
+- score
+- record
+- awards
+- badges
+- game center
+- GPGS
+- game services
+- progression
+- game progression
+- Levels
+- level system
+- level progression
+- level design
+- difficulty
+- level difficulty
+- scene design
+- scene
+- gamification
+- playmaker
+- maze
+- dungeon
+- map
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

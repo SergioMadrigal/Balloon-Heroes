@@ -15,9 +15,9 @@ public class ShootAlien : MonoBehaviour {
 
 	public void ShootPeon(){
 
-		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Sphere 1");
-		go.transform.position = balaPeon.position;
-		go.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
+		GameObject gos=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Capsule");
+		gos.transform.position = balaPeon.position;
+		gos.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
 		StartCoroutine(audioShoot());
 	}
 

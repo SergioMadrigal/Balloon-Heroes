@@ -6,7 +6,7 @@ public class Reciclador : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
 	
-		Invoke("DestroyEnemy",7f);
+		Invoke("DestroyThis",7f);
 
 	}
 
@@ -14,11 +14,11 @@ public class Reciclador : MonoBehaviour {
 
 		if(other.gameObject.tag == "TableCollider" ){
 			other.gameObject.GetComponent<TableLife>().lessLife(5);
-			DestroyEnemy();
+			DestroyThis();
 		}
 	}
 
-	void DestroyEnemy(){
+	void DestroyThis(){
 		ObjectPool.Instance.PoolGameObject(gameObject);
 	}
 

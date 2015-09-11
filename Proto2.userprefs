@@ -1,15 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PrototiposConAssets\Personajes\BulletPooling.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\BalloonAliens2\Prueba Balloon Heroes 040915\Proto2\Assets\Enemies\Enemigo\Script\levels 1.xml">
     <Files>
-      <File FileName="Assets\Enemies\Enemigo\Script\Botones.cs" Line="66" Column="36" />
-      <File FileName="Assets\Enemies\Menu\BotonesMenu.cs" Line="25" Column="36" />
-      <File FileName="Assets\PrototiposConAssets\SaludDaño_Tabla\TableLife.cs" Line="1" Column="1" />
-      <File FileName="Assets\PrototiposConAssets\Personajes\BulletPooling.cs" Line="48" Column="23" />
-      <File FileName="Assets\PrototiposConAssets\Personajes\ActiveBalloon.cs" Line="1" Column="1" />
-      <File FileName="Assets\Enemies\Enemigo\Script\HealthBoss.cs" Line="61" Column="21" />
-      <File FileName="c:\Users\Sergio Madrigal\Documents\GitHub\Balloon-Heroes\Assets\Bonus\ObjectPool.cs" Line="55" Column="2" />
-      <File FileName="Assets\Enemies\Enemigo\Script\healtEnemy.cs" Line="62" Column="31" />
+      <File FileName="..\..\..\BalloonAliens2\Prueba Balloon Heroes 040915\Proto2\Assets\Enemies\Enemigo\Script\levels 1.xml" Line="9" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

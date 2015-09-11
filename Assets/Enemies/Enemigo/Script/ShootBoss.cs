@@ -16,22 +16,14 @@ public class ShootBoss : MonoBehaviour {
 	
 	public void ShootBossGun(){
 		
-		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("proyectil boss");
-		go.transform.position = cañon1.position;
-		go.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
-
-		GameObject canon = (GameObject)ObjectPool.Instance.GetGameObjectOfType("proyectil boss");
+		GameObject goes=(GameObject)ObjectPool.Instance.GetGameObjectOfType("Capsule");
+		goes.transform.position = cañon1.position;
+		goes.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
+		audioSource.Play();
+		GameObject canon = (GameObject)ObjectPool.Instance.GetGameObjectOfType("Capsule");
 		canon.transform.position = cañon2.position;
 		canon.GetComponent<Rigidbody>().AddForce((destino-transform.position).normalized * speedBall,ForceMode.Impulse);
-
-		StartCoroutine(audioBoss());
-	}
-	
-	IEnumerator audioBoss(){
 		audioSource.Play();
-		yield return new WaitForSeconds(audioSource.clip.length);
-		
 	}
-	
-	
+
 }

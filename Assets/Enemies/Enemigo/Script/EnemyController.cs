@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿	using UnityEngine;
 using System.Collections;
 
 public class EnemyController : MonoBehaviour {
@@ -12,16 +12,18 @@ public class EnemyController : MonoBehaviour {
 	void Start(){
 		audioSource = GetComponent<AudioSource>();
 	}
-	public void ActivityStart () {
-		StartCoroutine(Shoot());
-	}
 
+	void OnEnable(){
+		StartCoroutine(Shoot()); 
+
+	}
+	
 	void Disp(){
 
 
 		GameObject go=(GameObject)ObjectPool.Instance.GetGameObjectOfType("proyectilShip");
 		go.transform.position = transform.position;
-		go.GetComponent<Rigidbody>().AddForce(  (destino - transform.position).normalized * speedBall,ForceMode.Impulse);
+		go.GetComponent<Rigidbody>().AddForce((destino - transform.position).normalized * speedBall,ForceMode.Impulse);
 
 	}
 

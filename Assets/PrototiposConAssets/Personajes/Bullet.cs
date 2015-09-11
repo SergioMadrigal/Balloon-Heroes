@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 
+
 	public void areThisLiving(){
 		if(Time.time > deadTime){
 			gameObject.SetActive(false); 

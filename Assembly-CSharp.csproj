@@ -61,6 +61,7 @@
      <Compile Include="Assets\Enemies\Menu\Splash.cs" />
      <Compile Include="Assets\Enemies\Splash_Android\SplashAnd.cs" />
      <Compile Include="Assets\Game\HealingTableBalloons.cs" />
+     <Compile Include="Assets\Niveles\Intro.cs" />
      <Compile Include="Assets\Prototipos\CargaNiveles\SetLevels.cs" />
      <Compile Include="Assets\Prototipos\CargaNiveles\prefabs\Enemy.cs" />
      <Compile Include="Assets\Prototipos\CargaNiveles\prueba\LoadXmlFile.cs" />
@@ -81,8 +82,10 @@
      <Compile Include="Assets\PrototiposConAssets\Personajes\BulletPooling.cs" />
      <Compile Include="Assets\PrototiposConAssets\SaludDaño_Tabla\TableLife.cs" />
      <None Include="Assets\Enemies\Enemigo\Script\levels 1.xml" />
+     <None Include="Assets\Plugins\WP8\IAPMock.xml" />
      <None Include="Assets\Prototipos\CargaNiveles\levels.xml" />
      <None Include="Assets\Prototipos\CargaNiveles\prueba\gamexmldata.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -92,9 +95,19 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="soomla-wp-core">
+ <HintPath>C:/Users/Sergio Madrigal/Desktop/BalloonAliens/Prueba Balloon Heroes 040915/Proto2/Assets/Plugins/soomla-wp-core.dll</HintPath>
+ </Reference>
+ <Reference Include="wp-store">
+ <HintPath>C:/Users/Sergio Madrigal/Desktop/BalloonAliens/Prueba Balloon Heroes 040915/Proto2/Assets/Plugins/wp-store.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{4D68EC91-E550-FE68-DC57-B49D2CCF2E52}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

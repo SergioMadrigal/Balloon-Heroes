@@ -4,61 +4,49 @@ using System.Collections;
 
 public class HealthBoss : MonoBehaviour {
 
+	//lifebar
 	public Image vida;
-	public float health = 100;
-	public float value;
-	public AudioClip clip;
-	public AudioSource finalSound;
-	//public GameObject ScoreFinal = null;
-
-	//void OnEnable () {
-		//Invoke("DestroyEnemy", 7f);
-//		StartCoroutine(DestroyEnemy());
-	//}
+	//Values
+	public int health;
+	private int totalHealth;
+	//Audio
+	AudioSource audioSource;
+	AudioClip clip;
+	
+	
 	void Start(){
-		//ScoreFinal = GameObject.Find("Score") as GameObject;
-		//ScoreFinal = GetComponent<GameObject>();
-		finalSound = GetComponent<AudioSource>();
-		//ScoreFinal.SetActive(false);
-	}
-
-	
-public void Damage(float value){
-	health -= value*200;
-	
-	vida.fillAmount -= value;
-	
-	if(health <= 0){
+		vida = vida.GetComponent<Image>();
+		totalHealth = health;
+		audioSource = GetComponent<AudioSource>();
 		
-		//print("Eliminado");
-		ObjectPool.Instance.PoolGameObject(this.gameObject);
-		//	StopCoroutine("EnemyTime");
-		//	StartCoroutine("EnemyPeon");
-			//ScoreFinal.SetActive(true);
-
 	}
 	
-}
-void DestroyEnemy(){
-	
-	ObjectPool.Instance.PoolGameObject(gameObject);
-}
-
-public void OnCollisionEnter(Collision nave){
-	
-	health -= value*100;
-	
-	vida.fillAmount -= value;
-	
-	if(health <=0){
+	//test
+	public void Damage(int value){
+		health -= value;
 		
-		ObjectPool.Instance.PoolGameObject(this.gameObject);
+		if(vida.fillAmount > 0f )
+			vida.fillAmount -= 0.04f;
+		
+		audioHealth();
+		
+		if(health <= 0f){
+			DestroyEnemy();
 
+		}
 	}
-  } 
-	IEnumerator audioStop(){
-
-		finalSound.Stop();
-		yield return new WaitForSeconds(finalSound.clip.length);
-    }
+	
+	//Return to Object
+	public void DestroyEnemy(){		
+		//	ObjectPool.Instance.PoolGameObject(gameObject);
+		this.gameObject.SetActive(false);
+		//Destroy(this.gameObject);
+	}
+	
+	//Sound
+	public void audioHealth(){
+		audioSource.Play();
+		//yield return new WaitForSeconds(audioSource.clip.length);
+	}
+	
 }

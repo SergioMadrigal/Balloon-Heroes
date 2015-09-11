@@ -12,13 +12,13 @@ public class BulletPooling : MonoBehaviour {
 	AudioClip clip;
 	AudioSource audioSource;
 
-	public AudioSource rabbitSound;
+	//public AudioSource rabbitSound;
 
 
 	// Use this for initialization
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
-		rabbitSound = GetComponent<AudioSource>();
+		//rabbitSound = GetComponent<AudioSource>();
 		instantiateBullets();
 	}
 
@@ -41,21 +41,12 @@ public class BulletPooling : MonoBehaviour {
 		_bullets[i].SetActive(true);
 		_bullets[i].GetComponent<Bullet>().backToLife();
 		_bullets[i].transform.position = shootPoint.transform.position;
-		if(gameObject.name == "Danger"){
-			StartCoroutine(soundPetDog());
-		} 
-		if(gameObject.name == "Frankie"){
-			rabbitSound.Play();
-		}
+		//if(gameObject.name == "Danger"){
+			audioSource.Play();
+		//} 
+		//if(gameObject.name == "Frankie"){
+		//	rabbitSound.Play();
+		//}
 
 	}
-
-	IEnumerator soundPetDog(){
-		audioSource.Play();
-		yield return new WaitForSeconds(audioSource.clip.length);
-
-	}
-
-
-
 }

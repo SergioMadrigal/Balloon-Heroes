@@ -17,10 +17,14 @@ public class TableLife : MonoBehaviour {
 	private GameObject[] lifePhases;
 	public GameObject gameOverIm;
 	public bool gameOver;
+	AudioClip clip;
+	AudioSource audioSource;
 	
 
 	// Use this for initialization
 	void Start (){
+		audioSource = GetComponent<AudioSource>();
+		Time.timeScale =1;
 		gameOverIm.SetActive(false);
 		gameOver = false;
 		lifePhases = new GameObject[]{phase1,phase2,phase3, phase4, phase5};
@@ -51,6 +55,7 @@ public class TableLife : MonoBehaviour {
 			//barlife.Translate(-3,0,0);
 			barlife.localPosition = new Vector3(barlife.localPosition.x-(3*value),0,0);
 			percentage-= value;
+			audioSource.Play();
 			//per_Text.text=percentage +"%";
 		}
 	}
@@ -131,11 +136,13 @@ public class TableLife : MonoBehaviour {
 		lifePhases[4].SetActive(false);
 		gameOver = true;
 		gameOverImage();
+	
 	}
 
 	public void gameOverImage(){
-
+		Time.timeScale = 0.1f;
 		gameOverIm.SetActive(true);
-
 	}
+
+
 }

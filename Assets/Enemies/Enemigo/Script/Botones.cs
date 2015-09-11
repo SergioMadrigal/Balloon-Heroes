@@ -31,15 +31,12 @@ public class Botones : MonoBehaviour {
 	}
 	public void RetryLevel(){
 		audioSource.Play();
-	//	Application.LoadLevel("Enemigo");
 		Time.timeScale=1;
 		StartCoroutine(playSondRetry());
 
 	}
 	
 	public void HomeLevel(){
-		//audioSource.Play();
-	//	Application.LoadLevel("Menu");
 		Time.timeScale = 1;
 		StartCoroutine(playSound());
 	}
@@ -56,12 +53,14 @@ public class Botones : MonoBehaviour {
 
 	 IEnumerator playSound(){
 		audioSource.Play();
+		Time.timeScale = 1;
 		yield return new WaitForSeconds(audioSource.clip.length);
 		Application.LoadLevel("Menu");    
 	}
 
 	IEnumerator playSondRetry(){
 		audioSource.Play();
+		Time.timeScale = 1;
 		yield return new WaitForSeconds(audioSource.clip.length);
 		Application.LoadLevel("Proto Game");
 	}

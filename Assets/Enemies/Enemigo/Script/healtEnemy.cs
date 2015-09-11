@@ -5,41 +5,20 @@ using System.Collections;
 public class healtEnemy : MonoBehaviour {
 	//lifebar
 	public Image vida;
-
 	//Values
 	public int health;
 	private int totalHealth;
-	//private int value;
-
 	//Audio
 	AudioSource audioSource;
 	AudioClip clip;
 
+
+
 	void Start(){
 		vida = vida.GetComponent<Image>();
-
 		totalHealth = health;
 		audioSource = GetComponent<AudioSource>();
-
-		StartCoroutine("MethodUpdate");
-
-	}
-
-	IEnumerator MethodUpdate(){
-		while(true){
-			//vida.fillAmount = health / totalHealth ; 
-
-			/*if (vida.fillAmount <= 0){
-				DestroyEnemy();
-			}*/
-
-			yield return null;
-		}
-	}
-
-	//time of life
-	void OnEnable () {
-		//Invoke("DestroyEnemy", 7f);
+	
 	}
 
 	//test
@@ -47,30 +26,26 @@ public class healtEnemy : MonoBehaviour {
 		health -= value;
 
 		if(vida.fillAmount > 0f )
-			vida.fillAmount -= 0.04f;
+			vida.fillAmount -= 0.07f;
 
-		StartCoroutine(audioHealth());
+		audioHealth();
 
 		if(health <= 0f){
+
 			DestroyEnemy();
+
 		}
 	}
 
 	//Return to Object
 	public void DestroyEnemy(){		
-		//ObjectPool.Instance.PoolGameObject(gameObject);
-		gameObject.SetActive(false);
+		Debug.Log ("SE MUERE ENEMIGO");
+		this.gameObject.SetActive(false);
 	}
 
-	//On Collision
-	//public void OnCollisionEnter(Collision nave){
-	//	Damage(value);
-	//}
-
 	//Sound
-	IEnumerator audioHealth(){
+	public void audioHealth(){
 		audioSource.Play();
-		yield return new WaitForSeconds(audioSource.clip.length);
 	}
 	
 }

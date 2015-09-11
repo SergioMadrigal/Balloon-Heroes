@@ -1,22 +1,21 @@
 <levels>
 	<level lv="1"><!-- level 1 ! -->
-	<!--	<name>Level 1</name>
-		<object name="alien_peon" 	time="5" ></object>
-		<object name="Enemigo" 	time="10"></object>
-		<object name="alien_peon" 	time="15"></object>
-		<object name="Enemigo" 	time="23"></object>
-		<object name="Enemigo"	time="24"></object>
-		<object name="alien_peon"		time="24"></object>
-		<object name="Enemigo" 	time="26"></object> -->
-		<object name="Enemigo" time="60"></object>
+		<name>Level 1</name>
+		<!---<object name="alien" 	time="5" ></object>
+		<object name="alien_yellow"  time="10"></object>
+		<object name="alien_peon_rojo" 	time="20"></object>
+		<object name="alien" 	time="35"></object>
+		<object name="alien_peon_yellow"  time="45"></object> -->
+		<object name="demolisher"  time="5"></object>
+
 	</level>
 	<level lv="2"><!-- level 2 ! -->
 		<name >Level 2</name>
-		<object name="Cube" 	time="5" ></object>
-		<object name="Cube" 	time="6" ></object>
-		<object name="Sphere" 	time="10"></object>
-		<object name="Sphere" 	time="11"></object>
-		<object name="Sphere" 	time="12"></object>
-		<object name="Cube" 	time="20"></object>
+		<object name="Enemigo" 	time="5" ></object>
+		<object name="Enemigo" 	time="10" ></object>
+		<object name="alien" 	time="15"></object>
+		<object name="Enemigo" 	time="20"></object>
+		<object name="alien" 	time="25"></object>
+		<object name="alien" 	time="30"></object>
 	</level>
 </levels>
